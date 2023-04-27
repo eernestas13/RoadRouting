@@ -22,7 +22,6 @@ sudo apt-get install openjdk-11-jdk
 
 ```
 git clone https://github.com/eernestas13/RoadRouting
-./graphhopper.sh -a import -i wales-latest.osm.pbf -o walesMapIncident-gh
 ./graphhopper.sh clean
 ./graphhopper.sh -a import -i wales-latest.osm.pbf -o walesMapIncident-gh
 ./graphhopper.sh build
