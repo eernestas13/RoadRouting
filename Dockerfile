@@ -17,4 +17,4 @@ EXPOSE 8080
 
 ENTRYPOINT [ "./graphhopper.sh", "web" ]
 
-CMD [ "/data/wales-latest.pbf" ]
+CMD [ "/wales-latest.osm.pbf" ]

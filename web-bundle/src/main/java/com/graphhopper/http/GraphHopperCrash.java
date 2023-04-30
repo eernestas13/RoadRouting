@@ -33,7 +33,8 @@ public class GraphHopperCrash extends GraphHopperOSM {
     public GraphHopperCrash(CmdArgs args) {
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-        crashLocation = args.get("crash.location", "/com.docker.devenvironments.code/data/crashDataRetry.json");
+       // crashLocation = args.get("crash.location", "/com.docker.devenvironments.code/data/crashDataRetry.json");
+       crashLocation = args.get("crash.location", "../data/crashDataRetry.json");
         EncodingManager.Builder builder = new EncodingManager.Builder(8);
         builder.add(crashEnc = new IntEncodedValue("crash", 6, 0, false));
         builder.add(new CarFlagEncoder());

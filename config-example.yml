@@ -37,7 +37,7 @@ server:
   applicationConnectors:
   - type: http
     port: 8080
-    bindHost: RoadRouting.com
+   # bindHost: RoadRouting.com
 #    bindHost: localhost
   requestLog:
       appenders: []
